@@ -1,0 +1,15 @@
+.main {
+    width: 100%; 
+    background-color: #050505;
+}
+
+.container-main {
+    width: 80%;
+    margin: auto; 
+}
+
+.main-light {
+    background-color: #f9f9f9;
+}
+
+
