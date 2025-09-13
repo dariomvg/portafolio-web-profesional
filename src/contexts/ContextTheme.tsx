@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ContextThemeType } from "@/types/types";
 import { createContext, useContext, useState } from "react";
 
@@ -18,9 +18,9 @@ export default function ProviderTheme({
   children: React.ReactNode;
 }) {
   const [theme, setTheme] = useState("dark");
-
+  const themeDark = "dark";
   const changeTheme = () => {
-    if (theme === "dark") {
+    if (theme === themeDark) {
       setTheme("light");
     } else {
       setTheme("dark");

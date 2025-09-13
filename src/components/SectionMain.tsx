@@ -11,8 +11,8 @@ const SectionMain = () => {
   return (
     <section className="section-main">
       <div className="container-info-main">
-        <p className="title-top-info-main">Desarrollador Web Frontend</p>
-        <h1 className="title-info-main">Dario Martinez</h1>
+        <p className="title-top-info-main">Dario Martinez</p>
+        <h1 className="title-info-main">Desarrollador Web Frontend</h1>
         <TypeWriter words={words} cursor="line" color="#fff" />
         <p className="presentation-info-main">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -49,9 +49,9 @@ const SectionMain = () => {
           </a>
           <a
             href="mailto:contact.dario.info@gmail.com"
-            className="link-section-main red">
+            className="link-section-main green">
             <img src={iconGmail.src} alt="icon gmail" width={20} height={20} />
-            Gmail
+            Correo
           </a>
           <a
             href="/cv-dario-martinez.pdf"

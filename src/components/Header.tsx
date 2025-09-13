@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "@/contexts/ContextTheme";
 import "@/styles/header.css";
-import { Toggle } from "kit-components-ui";
 import Link from "next/link";
 
 const Header = () => {
@@ -32,7 +31,7 @@ const Header = () => {
         <Link href="#habilidades" className="link-nav">
           Habilidades
         </Link>
-        <Link href="#sobremi" className="link-nav">
+        <Link href="#sobre-mi" className="link-nav">
           Sobre mi
         </Link>
         <Link href="#contactos" className="link-nav">
@@ -65,7 +64,11 @@ const Header = () => {
             />
           </svg>
         </Link>
-        <Toggle onClick={changeTheme} />
+
+        <div className="checkbox-apple">
+          <input className="yep" id="check-apple" type="checkbox" onClick={changeTheme} />
+          <label htmlFor="check-apple"></label>
+        </div>
       </div>
     </header>
   );

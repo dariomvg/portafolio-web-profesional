@@ -1,6 +1,8 @@
 export const words: string[] = [
-  "Buenas prácticas",
+  "Velocidad",
   "Accesibilidad",
   "Escalabilidad",
   "Rendimiento",
 ];
+
+

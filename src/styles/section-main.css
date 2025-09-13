@@ -1,83 +1,87 @@
-
 .section-main {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/feature.png');
-    background-size: cover; 
+  width: 100%;
+  height: 100vh;
+  background-image: url("/feature.png");
+  background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 150px #050505; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-shadow: inset 0 0 200px #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-info-main {
-    width: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 80%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
 }
 
 .title-top-info-main {
-    color: #fff; 
-    font-size: 25px;
-    font-weight: 500   ;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .title-info-main {
-    font-size:50px; 
+  font-size: 60px;
 }
 
 .presentation-info-main {
-    color: #bbb; 
-    font-size: 18px;
+  color: #bbb;
+  font-size: 18px;
 }
 
 .contacts-info-main {
-    display: flex; 
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .link-section-main {
-    display: flex; 
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #ddd;
-    font-size: 16px;
-    font-weight: 500;
-    transition: .5s ease-in-out;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 10px;
 }
 
 .blue {
-    border-color: #2788de;
+  border-color: #2788de;
+  color: #2788de;
 }
 .blue:hover {
-    background-color: #2789de98;
+  border-color: #52abf8;
 }
 .gray {
-    border-color: #ddd;
+  border-color: #ddd;
+  color: #ddd;
 }
 .gray:hover {
-    background-color: #dddddd98;
-    
+  border-color: #fff;
 }
 
-.red {
-    border-color: #f70909;
+.green {
+  border-color: #008000;
+  color: #3ddc84;;
 }
-.red:hover {
-    background-color: #f7090998;
+
+.green:hover {
+  border-color: #58f29d;
 }
 
 .orange {
-    border-color: #d78406;
+  border-color: #f85c18;
+  color: #f85c18;
 }
 .orange:hover {
-    background-color: #d7830698;
+  border-color: #f98755;
 }

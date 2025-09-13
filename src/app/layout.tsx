@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import {  JetBrains_Mono } from "next/font/google";
 import ProviderTheme from "@/contexts/ContextTheme";
-
-const JetBrainsMono = JetBrains_Mono({
-  weight: ["400", "700"],
-  style: ["normal"],
-  display: "swap",
+import "./globals.css";
+export const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

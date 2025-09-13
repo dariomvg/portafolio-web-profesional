@@ -1,0 +1,12 @@
+.container-title{
+    display: flex; 
+    align-items: center; 
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+.container-title h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}

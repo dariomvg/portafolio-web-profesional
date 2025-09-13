@@ -1,9 +1,14 @@
-import React from 'react'
+import "@/styles/footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer">
+      <p className="title-footer">
+        © <b>Dario Martinez</b> 2025
+      </p>
+      <p className="title-footer">Todos los derechos reservados</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

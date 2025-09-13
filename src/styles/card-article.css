@@ -1,0 +1,28 @@
+.card-article {
+    width: 100%; 
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+
+.date-article {
+    font-size: 14px;
+    color: #777;
+}
+
+
+.title-article {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; 
+}
+
+
+.description-article {
+    font-size: 16px;
+    color: #101010;
+}

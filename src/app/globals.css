@@ -1,11 +1,8 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333;
-  --background-color: #f9f9f9;
+  --primary-color: tranparent;
 }
 
-/* todo: uso => color: var(--text-color); */
+/* uso => color: var(--text-color); */
 
 * {
   box-sizing: border-box;

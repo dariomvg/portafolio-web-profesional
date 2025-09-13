@@ -20,14 +20,16 @@ import { url_image } from "./options";
 export const projects: ProjectsTypes[] = [
   {
     id: 1,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 1001, name: "", icon: "" },
-      { id: 1002, name: "", icon: "" },
-      { id: 1003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017947",
@@ -36,14 +38,17 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 2,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
+
     image: null,
     icons: [
-      { id: 2001, name: "", icon: "" },
-      { id: 2002, name: "", icon: "" },
-      { id: 2003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017939",
@@ -52,14 +57,17 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 3,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
+
     image: null,
     icons: [
-      { id: 3001, name: "", icon: "" },
-      { id: 3002, name: "", icon: "" },
-      { id: 3003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017937",
@@ -68,14 +76,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 4,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    repository: "https://github.com/dariomvg",
+    link: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 4001, name: "", icon: "" },
-      { id: 4002, name: "", icon: "" },
-      { id: 4003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017935",
@@ -84,14 +94,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 5,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 5001, name: "", icon: "" },
-      { id: 5002, name: "", icon: "" },
-      { id: 5003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017931",
@@ -100,14 +112,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 6,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 6001, name: "", icon: "" },
-      { id: 6002, name: "", icon: "" },
-      { id: 6003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017931",
@@ -116,14 +130,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 7,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 7001, name: "", icon: "" },
-      { id: 7002, name: "", icon: "" },
-      { id: 7003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017930",
@@ -132,14 +148,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 8,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 8001, name: "", icon: "" },
-      { id: 8002, name: "", icon: "" },
-      { id: 8003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017928",
@@ -148,14 +166,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 9,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 9001, name: "", icon: "" },
-      { id: 9002, name: "", icon: "" },
-      { id: 9003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017927",
@@ -164,14 +184,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 10,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 10001, name: "", icon: "" },
-      { id: 10002, name: "", icon: "" },
-      { id: 10003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017927",
@@ -180,14 +202,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 11,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 11001, name: "", icon: "" },
-      { id: 11002, name: "", icon: "" },
-      { id: 11003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017926",
@@ -196,14 +220,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 12,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
     icons: [
-      { id: 12001, name: "", icon: "" },
-      { id: 12002, name: "", icon: "" },
-      { id: 12003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017926",
@@ -212,15 +238,16 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 13,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: null,
-
     icons: [
-      { id: 13001, name: "", icon: "" },
-      { id: 13002, name: "", icon: "" },
-      { id: 13003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: {
       id: "v1757017926",
@@ -229,40 +256,46 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 14,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: `${url_image}/v1757017926/chats-realtime.png`,
     icons: [
-      { id: 14001, name: "", icon: "" },
-      { id: 14002, name: "", icon: "" },
-      { id: 14003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: null,
   },
   {
     id: 15,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    link: "https://github.com/dariomvg",
+    repository: "https://github.com/dariomvg",
     image: `${url_image}/v1757017927/app-auth.png`,
     icons: [
-      { id: 15001, name: "", icon: "" },
-      { id: 15002, name: "", icon: "" },
-      { id: 15003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: null,
   },
   {
     id: 16,
-    name: "",
-    description: "",
-    link: "",
+    name: "Dashboard de tareas más IA",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum rem deleniti nam nostrum reprehenderit quaerat temporibus qui distinctio. Maxime ex officiis nostrum aliquam ab mollitia facilis libero, perspiciatis quae?",
+    repository: "https://github.com/dariomvg",
+    link: "https://github.com/dariomvg",
     image: `${url_image}/v1757017926/mercado-pago.png`,
     icons: [
-      { id: 16001, name: "", icon: "" },
-      { id: 16002, name: "", icon: "" },
-      { id: 16003, name: "", icon: "" },
+      { id: 1001, name: "JavaScript", icon: javascript },
+      { id: 1002, name: "Supabase", icon: supabase },
+      { id: 1003, name: "React", icon: reactDark },
     ],
     video: null,
   },
