@@ -19,12 +19,8 @@ const SectionMain = ({
   return (
     <section className="section-main">
       <div className="container-info-main">
-        <ContainerViews effect="eff-top">
-          <p className="title-top-info-main">Dario Martinez</p>
-        </ContainerViews>
-        <ContainerViews effect="eff-zoom">
-          <h1 className="title-info-main">{content?.title_main}</h1>
-        </ContainerViews>
+        <p className="title-top-info-main">Dario Martinez</p>
+        <h1 className="title-info-main">{content?.title_main}</h1>
         {content?.words_typer && (
           <TypeWriter
             words={content.words_typer}
@@ -102,12 +98,13 @@ const SectionMain = ({
           </ContainerViews>
         </div>
       </div>
-      {theme !== themeDark && <>
-      <div className="box-gradient gr1"></div>
-      
-      <div className="box-gradient gr2"></div>
-      <div className="box-gradient gr3"></div>
-      </>}
+      {theme !== themeDark && (
+        <>
+          <div className="box-gradient gr1"></div>
+          <div className="box-gradient gr2"></div>
+          <div className="box-gradient gr3"></div>
+        </>
+      )}
     </section>
   );
 };
