@@ -8,7 +8,7 @@ const ContainerTitle = ({children}: {children: React.ReactNode}) => {
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
-        stroke="#fff"
+        stroke="var(--color-white)"
         width={24}
         height={24}
         className="size-6">

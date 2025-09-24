@@ -1,6 +1,6 @@
 .card-article {
     width: 100%; 
-    background-color: #e5e5e5;
+    background-color: var(--background-gray-light);
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -11,18 +11,18 @@
 
 .date-article {
     font-size: 14px;
-    color: #777;
+    color: var(--color-gray-light);
 }
 
 
 .title-article {
     font-size: 18px;
     font-weight: bold;
-    color: #000; 
+    color: var(--color-black); 
 }
 
 
 .description-article {
     font-size: 16px;
-    color: #101010;
+    color: var(--color-dark);
 }

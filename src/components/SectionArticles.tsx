@@ -5,10 +5,12 @@ import { API_KEY_ARTICLES, URL_API_ARTICLES } from "@/utils/options";
 import CardArticle from "./CardArticle";
 import { ArticleTypes } from "@/types/types";
 import { useEffect, useState } from "react";
+import { ContainerViews } from "eff-anim";
+import { useLanguage } from "@/contexts/ContextLanguages";
 
 export default function SectionArticles() {
   const [articles, setArticles] = useState<ArticleTypes[]>([]);
-
+  const {content} = useLanguage()
   useEffect(() => {
     const getArticles = async () => {
       const response = await fetch(`${URL_API_ARTICLES}${API_KEY_ARTICLES}`);
@@ -20,18 +22,20 @@ export default function SectionArticles() {
 
   return (
     <section className="section-articles" id="articulos">
-      <ContainerTitle>Artículos</ContainerTitle>
+      <ContainerTitle>{content?.title_sec_articles}</ContainerTitle>
       <ul className="list-articles">
         {articles.length > 0 &&
           articles
-            .slice(0, 5)
+            .slice(0, 7)
             .map(({ id, created_at, title, description }) => (
-              <CardArticle
-                key={id}
-                title={title}
-                created_at={created_at}
-                description={description}
-              />
+              <ContainerViews threshold={0.8} effect="eff-bottom" key={id}> 
+                <CardArticle
+                  title={title}
+                  created_at={created_at}
+                  description={description}
+                />
+
+              </ContainerViews>
             ))}
       </ul>
       <a
@@ -39,7 +43,7 @@ export default function SectionArticles() {
         target="_blank"
         rel="noopener noreferrer"
         className="link-articles">
-        Ver Todos los artículos
+        {content?.link_sec_articles}
       </a>
     </section>
   );

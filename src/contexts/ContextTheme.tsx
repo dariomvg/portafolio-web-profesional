@@ -19,6 +19,7 @@ export default function ProviderTheme({
 }) {
   const [theme, setTheme] = useState("dark");
   const themeDark = "dark";
+  
   const changeTheme = () => {
     if (theme === themeDark) {
       setTheme("light");
@@ -27,7 +28,7 @@ export default function ProviderTheme({
     }
   };
   return (
-    <ContextTheme.Provider value={{ theme, changeTheme }}>
+    <ContextTheme.Provider value={{ theme, changeTheme, themeDark }}>
       {children}
     </ContextTheme.Provider>
   );

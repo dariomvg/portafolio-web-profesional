@@ -1,11 +1,11 @@
 .section-contacts {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: auto;
 }
 
 .container-grid {
   width: 100%;
+  
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
@@ -14,14 +14,16 @@
 }
 
 .box-grid {
-  border: 2px solid #ffa500;
+  height: 100%; 
+  border: 1px solid var(--color-border);;
   border-radius: 5px;
   padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #ffa500;
+  color: var(--color-gray);;
+  background-color: var(--background-dark);;
 }
 
 .title-box-grid {
@@ -30,14 +32,14 @@
 }
 
 .link-box-grid {
-  color: #ffa500;
+  color: #1169b7;
   font-weight: bold;
   text-decoration: none;
   transition: color .5s ease-in-out;
   font-size: 16px;
 }
 .link-box-grid:hover {
-    color: #fbb432;
+   color: #3982c3;
 }
 
 .container-boxes-grid {
@@ -47,52 +49,34 @@
 }
 
 .link-box {
-  border: 2px solid #555;
+  border:1px solid var(--color-border);
   border-radius: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--color-gray);
   text-decoration: none;
   font-size: 16px;
-  background-color: transparent;
+  background-color: var(--background-dark);
   transition: 0.5s ease-in-out;
 }
 
-.link-box:nth-child(1) {
-  border-color: #999;
-}
-.link-box:nth-child(1):hover {
-  border-color: #fff;
-  color: #fff;
-}
-.link-box:nth-child(2) {
-  border-color: #008000;
-  color: #3ddc84;
-}
-.link-box:nth-child(2):hover {
-  border-color: #58f29d;
-  color: #58f29d;
+.link-box:hover {
+  border-color: var(--color-border-hover); 
+  color:var(--color-white)
 }
 
-.link-box:nth-child(3) {
-  border-color: #0a66c2;
-  color: #0a66c2;
-}
-.link-box:nth-child(3):hover {
-  border-color: #358ee7;
-  color: #358ee7;
-}
-.link-box:nth-child(4) {
-  border-color: #ff0000;
-  color: #ff0000;
-}
-.link-box:nth-child(4):hover {
-  border-color: #fa5555;
-  color: #fa5555;
-}
+
 .icon-grid {
   margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+  .section-contacts {
+    width: 100%;
+    margin: 0; 
+    padding: 5px;
+  }
 }

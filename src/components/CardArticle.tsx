@@ -1,7 +1,6 @@
 import { ArticleTypes } from "@/types/types";
 import "@/styles/card-article.css";
 
-
 const CardArticle = ({
   title,
   description,

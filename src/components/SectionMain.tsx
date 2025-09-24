@@ -1,68 +1,113 @@
-import { words } from "@/utils/words_typer";
 import { TypeWriter } from "type-writer-words";
 import iconLinkedin from "../assets/icons/linkedin.svg";
 import iconGithub from "../assets/icons/github.svg";
-import iconGithubLight from "../assets/icons/github_light.svg";
 import iconGmail from "../assets/icons/gmail.svg";
 import iconCv from "../assets/icons/pdf.png";
 import "@/styles/section-main.css";
+import { ContainerViews } from "eff-anim";
+import { useLanguage } from "@/contexts/ContextLanguages";
 
-const SectionMain = () => {
+const SectionMain = ({
+  theme,
+  themeDark,
+}: {
+  theme: string;
+  themeDark: string;
+}) => {
+  const { content } = useLanguage();
+
   return (
     <section className="section-main">
       <div className="container-info-main">
-        <p className="title-top-info-main">Dario Martinez</p>
-        <h1 className="title-info-main">Desarrollador Web Frontend</h1>
-        <TypeWriter words={words} cursor="line" color="#fff" />
-        <p className="presentation-info-main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          quibusdam odit dignissimos laborum aliquam incidunt iusto libero
-          accusantium ea et itaque quis aliquid alias, facere porro sint
-          explicabo in culpa.
-        </p>
+        <ContainerViews effect="eff-top">
+          <p className="title-top-info-main">Dario Martinez</p>
+        </ContainerViews>
+        <ContainerViews effect="eff-zoom">
+          <h1 className="title-info-main">{content?.title_main}</h1>
+        </ContainerViews>
+        {content?.words_typer && (
+          <TypeWriter
+            words={content.words_typer}
+            cursor="line"
+            color="var(--color-white)"
+          />
+        )}
+
+        <p className="presentation-info-main">{content?.description_main}</p>
         <div className="contacts-info-main">
-          <a
-            href="https://www.linkedin.com/in/dariomvg/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-section-main blue">
-            <img
-              src={iconLinkedin.src}
-              alt="icon linkedin"
-              width={20}
-              height={20}
-            />
-            Linkedin
-          </a>
-          <a
-            href="https://github.com/dariomvg"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-section-main gray">
-            <img
-              src={iconGithub.src}
-              alt="icon github"
-              width={20}
-              height={20}
-            />
-            Github
-          </a>
-          <a
-            href="mailto:contact.dario.info@gmail.com"
-            className="link-section-main green">
-            <img src={iconGmail.src} alt="icon gmail" width={20} height={20} />
-            Correo
-          </a>
-          <a
-            href="/cv-dario-martinez.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-section-main orange">
-            <img src={iconCv.src} alt="icon linkedin" width={20} height={20} />
-            Curriculum
-          </a>
+          <ContainerViews effect="eff-flip">
+            <a
+              href="https://www.linkedin.com/in/dariomvg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-section-main">
+              <img
+                src={iconLinkedin.src}
+                alt="icon linkedin"
+                width={20}
+                height={20}
+                loading="lazy"
+              />
+              {content?.title_linkedin}
+            </a>
+          </ContainerViews>
+
+          <ContainerViews effect="eff-flip">
+            <a
+              href="https://github.com/dariomvg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-section-main">
+              <img
+                src={iconGithub.src}
+                alt="icon github"
+                width={20}
+                height={20}
+                loading="lazy"
+              />
+              {content?.title_github}
+            </a>
+          </ContainerViews>
+
+          <ContainerViews effect="eff-flip">
+            <a
+              href="mailto:contact.dario.info@gmail.com"
+              className="link-section-main">
+              <img
+                src={iconGmail.src}
+                alt="icon gmail"
+                width={20}
+                height={20}
+                loading="lazy"
+              />
+              {content?.title_gmail}
+            </a>
+          </ContainerViews>
+
+          <ContainerViews effect="eff-flip">
+            <a
+              href="/cv-dario-martinez.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-section-main">
+              <img
+                src={iconCv.src}
+                alt="icon linkedin"
+                width={20}
+                height={20}
+                loading="lazy"
+              />
+              {content?.title_cv}
+            </a>
+          </ContainerViews>
         </div>
       </div>
+      {theme !== themeDark && <>
+      <div className="box-gradient gr1"></div>
+      
+      <div className="box-gradient gr2"></div>
+      <div className="box-gradient gr3"></div>
+      </>}
     </section>
   );
 };

@@ -8,8 +8,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 14px;
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid var(--third-color);;
     list-style: none;
+   position: relative;
 }
 
 .video-project{
@@ -17,21 +18,21 @@
 }
 
 .container-info-project {
-
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 2;
 }
 
 .name-card-project {
     font-size: 22px;
     font-weight: 700;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .description-card-project {
     font-size: 16px;
-    color: #ccc;
+    color: var(--color-gray);
 }
 
 .container-icons-project {
@@ -47,12 +48,13 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 
 .link-project {
     font-size: 16px;
-    color: #aaa; 
+    color: var(--color-gray); 
     font-weight: 500;
     background-color: transparent; 
     border: none; 
@@ -62,7 +64,23 @@
 }
 
 .link-project:hover {
-    color: #fff; 
+    color: var(--color-white);
 }
 
+.with-icon {
+    display: flex; 
+    align-items: center;
+   
+}
 
+@media (max-width: 768px) {
+    .card-project {
+        width: 100%
+    }
+    .image-project {
+        width: 100%; 
+    }
+    .video-project {
+        width: 100%;
+    }
+}

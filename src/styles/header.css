@@ -1,120 +1,138 @@
 .header {
-    width: 80%;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    background-color: transparent;
-    z-index: 999;
-    backdrop-filter: blur(2px);
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: transparent;
+  z-index: 999;
+  backdrop-filter: blur(10px);
 }
 
 .title-header {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .link-nav {
-    font-size: 16px;
-    font-weight:500; 
-    color: #bbb;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 .link-nav:hover {
-    color: #fff;
+  color: var(--color-white);
 }
 
 .container-header-theme-articles {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .link-articles {
-    font-size: 16px;
-    font-weight:500; 
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    display:flex;
-    align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 .link-articles:hover {
-    color: #fff;
+  color: var(--color-white);
 }
-
 
 .icon-menu {
-    display: none; 
-    cursor: pointer;
-}
-
-
-/* Input toggle theme */
-
-/* From Uiverse.io by guilhermeyohan */ 
-.checkbox-apple {
-  position: relative;
-  width: 50px;
-  height: 25px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.checkbox-apple label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 25px;
-  border-radius: 50px;
-  background: linear-gradient(to bottom, #626262, #9b9b9b);
+  display: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
 }
 
-.checkbox-apple label:after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+.button-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  background-color: var(--background-dark);
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: var(--color-gray);
 }
 
-.checkbox-apple input[type="checkbox"]:checked + label {
-  background: linear-gradient(to bottom, #202020, #101010);
-  border-color: #303030;
+.button-header:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-white);
 }
 
-.checkbox-apple input[type="checkbox"]:checked + label:after {
-  transform: translateX(25px);
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 5px;
+  }
 }
 
+@media (max-width: 768px) {
 
-.yep {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 25px;
+    .header {
+      width: 100%; 
+        flex-wrap: wrap; 
+        border-bottom: 1px solid var(--color-gray);
+        height: 40px;
+        padding: 0 10px;
+        
+    }
+
+    
+    .icon-menu {
+        display: block; 
+    }
+
+    .nav-header {
+        width: 100%; 
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 8px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-header-theme-articles {
+        width: 100%; 
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .open-menu {
+        height: auto; 
+        transition: .5s ease-in-out;  
+    }
+
+    .open-menu .nav-header {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .open-menu .container-header-theme-articles {
+        opacity: 1;
+        visibility: visible;
+    }
+
 }

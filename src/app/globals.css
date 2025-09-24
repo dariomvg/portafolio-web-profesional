@@ -1,8 +1,23 @@
 :root {
-  --primary-color: tranparent;
+  --first-color: #a94956;
+  --second-color: #6faf97;
+  --third-color: #8d7dc3;
+  --color-white: #fff;
+  --color-gray: #bbb;
+  --background-gray-dif: #cccccc99;
+  --background-gray-light: #e5e5e5;
+  --color-gray-light: #777;
+  --background-dark: #101010;
+  --color-border: #202020;
+  --color-border-hover: #303030;
+  --background-image: url("/feature.png");
+  --color-shadow: #050505;
+  --color-dark: #101010;
+  --color-black: #000;
+  --background-main: #050505; 
+  --text-shadow: 0 0 40px #fff;;
 }
 
-/* uso => color: var(--text-color); */
 
 * {
   box-sizing: border-box;
@@ -10,9 +25,3 @@
   margin: 0;
   scroll-behavior: smooth;
 }
-
-h1, h2, h3 {  
-  color: #fff; 
-}
-
-

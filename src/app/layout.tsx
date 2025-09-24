@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {  JetBrains_Mono } from "next/font/google";
 import ProviderTheme from "@/contexts/ContextTheme";
 import "./globals.css";
+import ProviderLanguages from "@/contexts/ContextLanguages";
 export const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -17,14 +18,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="es" className={JetBrainsMono.className}>
       <body>
+        <ProviderLanguages>
         <ProviderTheme>{children}</ProviderTheme>
+        </ProviderLanguages>
       </body>
     </html>
   );

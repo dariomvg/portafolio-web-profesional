@@ -1,6 +1,5 @@
 .footer {
-    width: 80%;
-    margin: auto; 
+    width: 100%;
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -10,6 +9,14 @@
 .title-footer {
     font-size: 16px;
     font-weight: 500;
-    color: #fff; 
+    color: var(--color-white); 
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    margin-top: 40px; 
+    padding: 5px;
+  }
 }

@@ -6,7 +6,7 @@
 }
 
 .container-title h3 {
-    color: #fff;
+    color: var(--color-white);
     font-size: 24px;
     font-weight: 600;
 }
