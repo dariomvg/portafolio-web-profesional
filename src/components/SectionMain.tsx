@@ -4,7 +4,6 @@ import iconGithub from "../assets/icons/github.svg";
 import iconGmail from "../assets/icons/gmail.svg";
 import iconCv from "../assets/icons/pdf.png";
 import "@/styles/section-main.css";
-import { ContainerViews } from "eff-anim";
 import { useLanguage } from "@/contexts/ContextLanguages";
 
 const SectionMain = ({
@@ -31,71 +30,63 @@ const SectionMain = ({
 
         <p className="presentation-info-main">{content?.description_main}</p>
         <div className="contacts-info-main">
-          <ContainerViews effect="eff-flip">
-            <a
-              href="https://www.linkedin.com/in/dariomvg/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-section-main">
-              <img
-                src={iconLinkedin.src}
-                alt="icon linkedin"
-                width={20}
-                height={20}
-                loading="lazy"
-              />
-              {content?.title_linkedin}
-            </a>
-          </ContainerViews>
+          <a
+            href="https://www.linkedin.com/in/dariomvg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-section-main">
+            <img
+              src={iconLinkedin.src}
+              alt="icon linkedin"
+              width={20}
+              height={20}
+              loading="lazy"
+            />
+            {content?.title_linkedin}
+          </a>
 
-          <ContainerViews effect="eff-flip">
-            <a
-              href="https://github.com/dariomvg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-section-main">
-              <img
-                src={iconGithub.src}
-                alt="icon github"
-                width={20}
-                height={20}
-                loading="lazy"
-              />
-              {content?.title_github}
-            </a>
-          </ContainerViews>
+          <a
+            href="https://github.com/dariomvg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-section-main">
+            <img
+              src={iconGithub.src}
+              alt="icon github"
+              width={20}
+              height={20}
+              loading="lazy"
+            />
+            {content?.title_github}
+          </a>
 
-          <ContainerViews effect="eff-flip">
-            <a
-              href="mailto:contact.dario.info@gmail.com"
-              className="link-section-main">
-              <img
-                src={iconGmail.src}
-                alt="icon gmail"
-                width={20}
-                height={20}
-                loading="lazy"
-              />
-              {content?.title_gmail}
-            </a>
-          </ContainerViews>
+          <a
+            href="mailto:contact.dario.info@gmail.com"
+            className="link-section-main">
+            <img
+              src={iconGmail.src}
+              alt="icon gmail"
+              width={20}
+              height={20}
+              loading="lazy"
+            />
+            {content?.title_gmail}
+          </a>
 
-          <ContainerViews effect="eff-flip">
-            <a
-              href="/cv-dario-martinez.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-section-main">
-              <img
-                src={iconCv.src}
-                alt="icon linkedin"
-                width={20}
-                height={20}
-                loading="lazy"
-              />
-              {content?.title_cv}
-            </a>
-          </ContainerViews>
+          <a
+            href="/cv-dario-martinez.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-section-main">
+            <img
+              src={iconCv.src}
+              alt="icon linkedin"
+              width={20}
+              height={20}
+              loading="lazy"
+            />
+            {content?.title_cv}
+          </a>
         </div>
       </div>
       {theme !== themeDark && (
