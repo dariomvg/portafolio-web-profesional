@@ -28,7 +28,7 @@ export default function ProviderTheme({
     }
   };
   return (
-    <ContextTheme.Provider value={{ theme, changeTheme, themeDark }}>
+    <ContextTheme.Provider value={{ theme, changeTheme}}>
       {children}
     </ContextTheme.Provider>
   );

@@ -15,7 +15,7 @@ const SectionContacts = () => {
       <div className="container-grid">
         <ContainerViews effect="eff-flip">
           <div className="box-grid">
-            <h2 className="title-box-grid">Blog</h2>
+            <h4 className="title-box-grid">Blog</h4>
             <a
               href="https://blog-bytes-kohl.vercel.app"
               target="_blank"

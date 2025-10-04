@@ -7,11 +7,11 @@ const CardArticle = ({
   created_at: date,
 }: ArticleTypes) => {
   return (
-    <li className="card-article">
+    <div className="card-article">
       <p className="date-article">{date}</p>
       <h4 className="title-article">{title}</h4>
       <p className="description-article">{description}</p>
-    </li>
+    </div>
   );
 };
 

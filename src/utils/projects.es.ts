@@ -81,7 +81,7 @@ export const projects: ProjectsTypes[] = [
     id: 5,
     name: "Gestor Group - Colaborativo",
     description:
-      "Aplicación para gestionar proyectos que necesiten colaboradores. Integrado con herramientas como lista de tareas, chat global, manejo de colaboradores y compartir por medio de contraseñas seguras. Puedes navegar entre distintos proyectos y con un solo click ingresar.",
+      "Aplicación para gestionar proyectos que necesiten colaboradores. Integrado con herramientas como lista de tareas, chat global, colaboradores y compartir por medio de contraseñas seguras. Puedes navegar entre distintos proyectos y con un solo click ingresar.",
     link: "https://gestor-group-content.vercel.app",
     repository: "https://github.com/dariomvg/gestor-group",
     image: null,
@@ -239,22 +239,9 @@ export const projects: ProjectsTypes[] = [
       name: "ecommerce.mp4",
     },
   },
+
   {
     id: 14,
-    name: "Módulo de pago - MercadoPago",
-    description:
-      "Módulo de mercado pago ya listo para integrar a tus proyectos o negocio para agregar métodos de pago con mercado pago. Puedes personalizarlo, manejando los datos de la forma que te beneficie y acomode a vos.",
-    repository: "https://github.com/dariomvg/pagos-mercadopago",
-    link: null,
-    image: `${url_image}/v1757017926/mercado-pago.png`,
-    icons: [
-      { id: 1401, name: "NodeJS", icon: nodejs },
-      { id: 1402, name: "ExpressJS", icon: expressjs },
-    ],
-    video: null,
-  },
-  {
-    id: 15,
     name: "PLataforma de peliculas y TV",
     description:
       "Plataforma de contenido de peliculas, series y TV. Contiene lo último del cine con toda la información completa como tráilers, actores y peliculas de esos actores, descripciónes y más. Además de las diferentes secciones, una con distintos géneros para que busques lo que más te gusta.",
@@ -272,8 +259,8 @@ export const projects: ProjectsTypes[] = [
     },
   },
   {
-    id: 16,
-    name: "",
+    id: 15,
+    name: "Blog Tech",
     description:
       "Blog de tecnología con contenido actual sobre programación, desarrollo y más. Puedes encontrar los cursos más completos de youtube, artículos con enseñanzas y temas de interes. Una sección de artículos propios donde muestro algunas recomendaciones o temas aprendidos y aplicados por mí.",
     link: "https://blog-bytes-kohl.vercel.app",

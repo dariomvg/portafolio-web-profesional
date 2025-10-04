@@ -113,11 +113,12 @@
         margin-top: 8px;
         opacity: 0;
         visibility: hidden;
-    }
-    .container-header-theme-articles {
+      }
+      .container-header-theme-articles {
         width: 100%; 
         opacity: 0;
         visibility: hidden;
+        padding-bottom: 10px;
     }
     
     .open-menu {

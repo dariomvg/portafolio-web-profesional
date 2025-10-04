@@ -35,8 +35,6 @@ export default function ProviderLanguages({
     });
   }, [lang]);
 
-  console.log(content);
-
   return (
     <ContextLanguages.Provider value={{ content, lang, toggleLanguage }}>
       {children}

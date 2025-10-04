@@ -7,15 +7,15 @@ import { useState } from "react";
 import { useLanguage } from "@/contexts/ContextLanguages";
 
 const Proyectos = () => {
-  const [index, setIndex] = useState<number>(4);
+  const [index, setIndex] = useState<number>(3);
   const { content } = useLanguage();
 
   const handleProjects = () => {
     if (index >= projects.length) {
-      setIndex(4);
+      setIndex(3);
       return;
     }
-    setIndex((prevIndex) => prevIndex + 4);
+    setIndex((prevIndex) => prevIndex + 3);
   };
 
   return (

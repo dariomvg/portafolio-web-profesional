@@ -1,6 +1,7 @@
 import { ProjectsTypes } from "@/types/types";
 import "../styles/card-project.css";
 import { url_videos } from "@/utils/options";
+import Image from "next/image";
 
 const CardProject = ({ project, titleGithub, titleVisit }: { project: ProjectsTypes, titleGithub: string, titleVisit: string }) => {
   const { description, icons, image, video, link, repository, name } = project;
@@ -8,19 +9,20 @@ const CardProject = ({ project, titleGithub, titleVisit }: { project: ProjectsTy
   return (
     <li className="card-project">
       {image ? (
-        <img
+        <Image
           src={image}
           alt={name}
-          width={500}
-          height={250}
+          width={300}
+          height={150}
+          sizes="(max-width: 768px) 100%"
           loading="lazy"
           className="image-project"
         />
       ) : (
         <video
           src={`${url_videos}/${video?.id}/${video?.name}`}
-          width={500}
-          height={250}
+          width={300}
+          height={150}
           autoPlay
           loop
           muted
@@ -37,11 +39,11 @@ const CardProject = ({ project, titleGithub, titleVisit }: { project: ProjectsTy
             <img
               key={index}
               src={icon.icon.src}
-              alt={icon.name}
+              alt={`icon tech ${icon.name}`}
               title={icon.name}
               loading="lazy"
-              width="30"
-              height="30"
+              width="26"
+              height="26"
               className="icon-project"
             />
           ))}

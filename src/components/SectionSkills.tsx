@@ -44,7 +44,7 @@ const SectionSkills = () => {
               <li className="item-skill" key={skill.id}>
                 <img
                   src={skill.icon.src}
-                  alt={skill.name}
+                  alt={`icon skill ${skill.name}`}
                   width={40}
                   height={40}
                   title={skill.name}

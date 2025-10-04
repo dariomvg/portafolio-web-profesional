@@ -23,7 +23,7 @@ export default function SectionArticles() {
   return (
     <section className="section-articles" id="articulos">
       <ContainerTitle>{content?.title_sec_articles}</ContainerTitle>
-      <ul className="list-articles">
+      <div className="list-articles">
         {articles.length > 0 &&
           articles
             .slice(0, 7)
@@ -37,7 +37,7 @@ export default function SectionArticles() {
 
               </ContainerViews>
             ))}
-      </ul>
+      </div>
       <a
         href="https://blog-bytes-kohl.vercel.app/posts"
         target="_blank"

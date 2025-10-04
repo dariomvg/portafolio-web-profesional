@@ -29,9 +29,10 @@
   --color-dark: #aaa;
   --color-black: #fff;
   --text-shadow: 0 0 1px #202020;
+  --show-gradient: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .wrapper {
     width: 100%;
     margin: 0;

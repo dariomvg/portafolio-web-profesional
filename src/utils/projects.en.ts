@@ -81,7 +81,7 @@ export const projects: ProjectsTypes[] = [
     id: 5,
     name: "Gestor Group - Collaborative",
     description:
-      "Application to manage projects that require collaborators. Integrated with tools such as task lists, global chat, collaborator management, and sharing through secure passwords. You can navigate between different projects and access them with just one click.",
+      "Application to manage projects that require collaborators. Integrated with tools such as task lists, global chat, collaborators, and sharing through secure passwords. You can navigate between different projects and access them with just one click.",
     link: "https://gestor-group-content.vercel.app",
     repository: "https://github.com/dariomvg/gestor-group",
     image: null,
@@ -240,20 +240,6 @@ export const projects: ProjectsTypes[] = [
   },
   {
     id: 14,
-    name: "Payment Module - MercadoPago",
-    description:
-      "MercadoPago payment module ready to integrate into your projects or business to add payment methods with MercadoPago. You can customize it, handling the data in the way that benefits and suits you best.",
-    repository: "https://github.com/dariomvg/pagos-mercadopago",
-    link: null,
-    image: `${url_image}/v1757017926/mercado-pago.png`,
-    icons: [
-      { id: 1401, name: "NodeJS", icon: nodejs },
-      { id: 1402, name: "ExpressJS", icon: expressjs },
-    ],
-    video: null,
-  },
-  {
-    id: 15,
     name: "Movies & TV Platform",
     description:
       "Platform for movies, series, and TV content. It features the latest films with full details such as trailers, actors, related movies, descriptions, and more. It also includes different sections, including genres, so you can easily find what you like best.",
@@ -271,8 +257,8 @@ export const projects: ProjectsTypes[] = [
     },
   },
   {
-    id: 16,
-    name: "",
+    id: 15,
+    name: "Blog Tech",
     description:
       "Technology blog with up-to-date content on programming, development, and more. You can find the most complete YouTube courses, educational articles, and topics of interest. A section with my own articles where I share recommendations or topics I have learned and applied.",
     link: "https://blog-bytes-kohl.vercel.app",

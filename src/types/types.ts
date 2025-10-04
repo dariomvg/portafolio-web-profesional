@@ -15,7 +15,6 @@ export interface ProjectsTypes {
 export interface ContextThemeType {
   theme: string;
   changeTheme: () => void;
-  themeDark: "dark";
 }
 
 export interface Content {

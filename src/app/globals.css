@@ -15,7 +15,8 @@
   --color-dark: #101010;
   --color-black: #000;
   --background-main: #050505; 
-  --text-shadow: 0 0 40px #fff;;
+  --text-shadow: 0 0 40px #fff;
+  --show-gradient: none;
 }
 
 

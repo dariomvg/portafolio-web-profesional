@@ -3,16 +3,10 @@ import iconLinkedin from "../assets/icons/linkedin.svg";
 import iconGithub from "../assets/icons/github.svg";
 import iconGmail from "../assets/icons/gmail.svg";
 import iconCv from "../assets/icons/pdf.png";
-import "@/styles/section-main.css";
 import { useLanguage } from "@/contexts/ContextLanguages";
+import "@/styles/section-main.css";
 
-const SectionMain = ({
-  theme,
-  themeDark,
-}: {
-  theme: string;
-  themeDark: string;
-}) => {
+const SectionMain = () => {
   const { content } = useLanguage();
 
   return (
@@ -89,13 +83,12 @@ const SectionMain = ({
           </a>
         </div>
       </div>
-      {theme !== themeDark && (
-        <>
-          <div className="box-gradient gr1"></div>
-          <div className="box-gradient gr2"></div>
-          <div className="box-gradient gr3"></div>
-        </>
-      )}
+
+      <>
+        <div className="box-gradient gr1"></div>
+        <div className="box-gradient gr2"></div>
+        <div className="box-gradient gr3"></div>
+      </>
     </section>
   );
 };

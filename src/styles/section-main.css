@@ -17,7 +17,7 @@
   height: 300px;
   opacity: 0.8;
   filter: blur(35px);
-
+  display: var(--show-gradient);
 }
 
 .gr1 {
